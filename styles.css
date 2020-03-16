@@ -1,0 +1,105 @@
+*{
+font-family: 'Libre Baskerville', serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background: #FF7900;
+    font-size: 18px;
+}
+
+.contenedor{
+    width: 400px;
+    margin: 40px auto;
+}
+
+.formulario .contenedor-input{
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"]{
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    display: block;
+    border: none;
+    border-bottom: 2px solid #cecece;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus{
+    border-bottom: 2px solid #FF7900;
+}
+
+.formulario input[type="radio"]{
+    display: none;
+}
+
+.formulario .sexo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+
+.formulario .label-radio{
+    background-color: rgba(249, 169, 63, .4);
+    color: #fff;
+    padding: 10px;
+    border-radius: 2px;
+    text-align: center;
+    width: 49%;
+}
+
+.formulario input[type="radio"]:checked + .label-radio{
+    background: #FF7900;
+}
+
+.formulario .terminos{
+    text-align: center;
+    color: #424242;
+    margin-bottom: 20px;
+}
+
+.formulario .terminos label{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.formulario .error{
+    display: none;
+    color: red;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formulario .btn{
+    border: none;
+    width: 50%;
+    display: block;
+    background: #FC9F4A;
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.formulario .btn:hover{
+    background: #FF7900;
+    font-size: 19px;
+    width: 70%;
+}
+
+.formulario .btn:checked{
+    font-weight: 700;
+}
